@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turisteo</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="descripcion">Descripción</string>
+    <string name="descripcion_vacio">Campo descripción vacío</string>
+    <string name="nombre_vacio">Campo nombre vacío</string>
+    <string name="salir">Salir</string>
+    <string name="agregar_marcador_lugar">Añadir marcador lugar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="hint_nombre_lugar">Nombre lugar</string>
+    <string name="hint_busqueda">Búsqueda de lugar</string>
+    <string name="lista_lugares">Lista de lugares</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="ningun_lugar">No hay ningún lugar con ese nombre</string>
+    <string name="abrir_drawer">Abriendo navigation drawer</string>
+    <string name="cerrar_drawer">Cerrando navigation drawer</string>
+    <string name="cerrar_dialogo">Cerrar</string>
+    <string name="mi_localizacion">Mi localización</string>
+    <string name="error_mi_localizacion">Se necesita el permiso de localización para mostrar tu ubicación</string>
+    <string name="tipo_mapa">Tipo de mapa</string>
+    <string-array name="array_tipo_mapa">
+        <item>Normal</item>
+        <item>Satélite</item>
+        <item>Terrestre</item>
+        <item>Híbrido</item>
+    </string-array>
+    <string name="default_tipo_mapa">Normal</string>
+    <string-array name="array_color_marca">
+        <item>Rojo</item>
+        <item>Cian</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Magenta</item>
+        <item>Naranja</item>
+    </string-array>
+    <string name="default_color_marca">Rojo</string>
+    <string name="color_marca">Color marca</string>
+    <string name="eliminar_lugar">Eliminar lugar</string>
+    <string name="mensaje_eliminar_lugar">¿Estás seguro de que quieres eliminar el lugar? También se
+        eliminará su marca del mapa</string>
+</resources>

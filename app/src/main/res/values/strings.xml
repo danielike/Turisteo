@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Turisteo</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="latitud">Latitude</string>
+    <string name="longitud">Longitude</string>
+    <string name="descripcion">Description</string>
+    <string name="descripcion_vacio">Description field empty</string>
+    <string name="nombre_vacio">Name field empty</string>
+    <string name="salir">Exit</string>
+    <string name="agregar_marcador_lugar">Add place marker</string>
+    <string name="aceptar">Ok</string>
+    <string name="cancelar">Cancel</string>
+    <string name="hint_nombre_lugar">Place name</string>
+    <string name="hint_busqueda">Search place</string>
+    <string name="lista_lugares">Places list</string>
+    <string name="preferencias">Preferences</string>
+    <string name="ningun_lugar">There is no place with that name</string>
+    <string name="abrir_drawer">Open navigation drawer</string>
+    <string name="cerrar_drawer">Close navigation drawer</string>
+    <string name="cerrar_dialogo">Close</string>
+    <string name="mi_localizacion">My location</string>
+    <string name="error_mi_localizacion">Needed the location permission to show your location</string>
+    <string name="tipo_mapa">Map type</string>
+    <string-array name="array_tipo_mapa">
+        <item>Normal</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+        <item>Hybrid</item>
+    </string-array>
+    <string name="default_tipo_mapa">Normal</string>
+    <string-array name="array_color_marca">
+        <item>Red</item>
+        <item >Cyan</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Orange</item>
+    </string-array>
+    <string name="default_color_marca">Red</string>
+    <string name="color_marca">Marker color</string>
+    <string name="eliminar_lugar">Delete place</string>
+    <string name="mensaje_eliminar_lugar">Are you sure you want to delete the place? Your marker will
+        also be removed from the map</string>
+</resources>
