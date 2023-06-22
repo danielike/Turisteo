@@ -1,0 +1,34 @@
+name: Build APK
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+
+    - name: Build and sign APK
+      run: |
+        ./gradlew assembleRelease
+        jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore /path/to/keystore.jks -storepass ${{ secrets.KEYSTORE_PASSWORD }} -keypass ${{ secrets.KEY_PASSWORD }} app/build/outputs/apk/release/app-release-unsigned.apk my-alias
+
+    - name: Zip align APK
+      run: |
+        $ANDROID_HOME/build-tools/VERSION/zipalign -v 4 app/build/outputs/apk/release/app-release-unsigned.apk app/build/outputs/apk/release/app-release.apk
+
+    - name: Upload APK artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Release APK
+        path: app/build/outputs/apk/release/app-release.apk
